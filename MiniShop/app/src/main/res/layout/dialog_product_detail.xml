@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_product_cap" />
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Termék név"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Részletes leírás..."
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5990 Ft"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDetailAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kosárba"
+        style="@style/Widget.MaterialComponents.Button"
+        app:backgroundTint="@color/red_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

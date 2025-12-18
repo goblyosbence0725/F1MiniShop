@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvCartTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kosár"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/cartItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Összesen: 0 Ft"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/green_total"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fizetési adatok"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Név"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail cím"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefonszám"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cím"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rendelés véglegesítése"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/red_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackToShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vissza a boltba"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/red_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
